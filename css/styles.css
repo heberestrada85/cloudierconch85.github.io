@@ -14,22 +14,7 @@ body {
   color: var(--color-1);
   font-size: 1.5rem;
 }
-#sidebarMenu a {
-  text-decoration: none;
-  color: var(--color-4);
-  text-transform: uppercase;
-  margin: 0 2rem;
-  display: block;
-}
-#sidebarMenu {
-  display: flex !important;
-  width: 80%;
-  /* background: red; */
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: flex-end;
-}
+
 section {
   width: 100vw;
 }
