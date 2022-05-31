@@ -9,6 +9,7 @@
 }
 * {
   max-width: 100vw;
+  font-family: 'Red Hat Display', sans-serif !important;
 }
 body {
   color: var(--color-1);
