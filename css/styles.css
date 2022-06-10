@@ -7,6 +7,7 @@
   --color-5: #DCDCDC;
   --color-6: #F2F2F2;
   --x: 115px;
+  --x-movil: 76px;
 }
 .reference:hover {
   opacity: 0 !important;
@@ -24,7 +25,6 @@
 body {
   color: var(--color-1);
   font-size: 1.5rem;
-  overflow-x: hidden;
 }
 .header {
   padding: 14px 26px 0 60px;
@@ -125,6 +125,7 @@ section {
   line-height: 38px;
   text-transform: uppercase;
 }
+}
 .custom_3 figcaption {
   margin: 26px;
 }
@@ -208,6 +209,7 @@ section {
 }
 .custom_5 p:nth-child(2):before {
   content: '';
+  left: 0;
   width: 100%;
   height: 200px;
   display: block;
@@ -253,6 +255,7 @@ section {
 .custom_6:before {
   content: '';
   width: 100%;
+  right: 0;
   height: 150px;
   display: block;
   position: absolute;
@@ -406,6 +409,8 @@ footer .df {
 /* media movil version */
 @media screen and (max-width: 576px) {
   .custom_1 {
+    margin: 0 0 1rem 0 !important;
+    min-height: auto;
   }
   /* .custom_6 .mt {
     .custom_1 {
@@ -448,8 +453,25 @@ footer .df {
     text-align: center;
   }
 
+  .links {
+    margin: 0 0 0 2.5rem;
+  }
+
+  .custom_5 p:nth-child(2):before {
+    border-top: 0 solid var(--color-5);
+    border-bottom: 150px solid transparent;
+    border-left: 100vw solid var(--color-5);
+  }
+  
+  .custom_6:before {
+    border-bottom: var(--x-movil) solid var(--color-5);
+    border-top: var(--x-movil) solid transparent;
+  }
+
   .button_store {
     justify-content: center;
+    transform: translate(0, 0);
+    width: 100%;
   }
 
   .custom_1 .img {
@@ -520,7 +542,7 @@ footer .df {
 
   .custom_6 {
     padding: 1rem;
-    margin: 14rem 0 0 0;
+    margin: 2rem 0 0 0;
   }
 
   .custom_6 h2 {
@@ -554,5 +576,40 @@ footer .df {
   footer textarea,
   footer input {
     padding: .5rem;
+    margin: 0 .5rem .5rem 0;
+    font-size: 1rem;
   }
+  footer [name="nombre"] {
+    margin: 0 .5rem .5rem 0 !important;
+  }
+
+  footer textarea::placeholder,
+  footer input::placeholder {
+    color: var(--color-3);
+    font-size: 1em;
+    letter-spacing: initial;
+  }
+  footer button {
+    font-size: 1rem;
+    padding: 0.5rem !important;
+  }
+  .credits {
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: var(--color-1);
+  }
+  footer .info {
+    padding: 0;
+    margin: 0 !important;
+  }
+  footer .df>* {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+a.link.d-block {
+  margin: 0;
+  display: block !important;
+  text-align: center;
 }
