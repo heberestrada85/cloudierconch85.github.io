@@ -19,7 +19,7 @@
   position: relative;
 }
 * {
-  max-width: 100vw;
+  max-width: 100vw;5
   font-family: 'Red Hat Display', sans-serif !important;
 }
 body {
@@ -571,6 +571,10 @@ footer .df {
 
   footer>.row {
     padding: 1rem;
+  }
+
+  #apellidos{
+    margin-right: 0px;
   }
 
   footer textarea,
